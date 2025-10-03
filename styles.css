@@ -105,14 +105,17 @@ section h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.python { background-color: #306998; }
-.sql { background-color: #F29111; }
-.pandas { background-color: #150458; }
-.numpy { background-color: #3A6D8C; }
-.matplotlib { background-color: #E1452B; }
-.seaborn { background-color: #2A7F62; }
-.ml { background-color: #FF9A8B; }
-.git { background-color: #F1502F; }
+.python { background-color: #306998; }      /* Python blue */
+.sql { background-color: #F29111; }         /* SQL orange */
+.pandas { background-color: #150458; }      /* Pandas deep blue */
+.numpy { background-color: #3A6D8C; }       /* NumPy teal */
+.matplotlib { background-color: #E1452B; }  /* Matplotlib red */
+.seaborn { background-color: #2A7F62; }     /* Seaborn green */
+.ml { background-color: #FF9A8B; }          /* ML pink gradient tone */
+.git { background-color: #F1502F; }         /* GitHub orange */
+.streamlit { background-color: #FF4B4B; }   /* Streamlit red */
+.supabase { background-color: #3ECF8E; }    /* Supabase green */
+.modal { background-color: #121212; }       /* Modal dark gray */
 
 /* Footer Section */
 footer {
@@ -128,3 +131,4 @@ footer {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
