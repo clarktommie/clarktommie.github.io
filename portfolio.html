@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio projects by Tommie Clark">
+    <title>Portfolio - Tommie Clark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Tommie Clark</h1>
+    <p>Data Science Portfolio</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="skills.html">Skills</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-card">
+            <h3><a href="https://clarktommie--book-browser-run.modal.run/">Book Browser Dashboard</a></h3>
+            <p>End-to-end pipeline for scraping book data, generating AI summaries, storing results in Supabase, and visualizing in a Streamlit dashboard.</p>
+            <ul>
+                <li>Serverless deployment on Modal with a live Streamlit front-end</li>
+                <li>Supabase/Postgres backend for structured storage and retrieval</li>
+                <li>Interactive filters and charts to explore titles, genres, and summaries</li>
+            </ul>
+            <p><a href="https://clarktommie--book-browser-run.modal.run/">Live Demo</a> | <a href="https://github.com/clarktommie/llmScrapingPractice/blob/main/README.md">Project README</a></p>
+        </div>
+
+        <div class="portfolio-card">
+            <h3><a href="https://clarktommie.github.io/clarktommie.github.io-DiabetesRisk/">Diabetes Risk Analysis</a></h3>
+            <p>Data cleaning and visualization project exploring key risk factors for diabetes to highlight patterns that matter for health outcomes.</p>
+            <ul>
+                <li>Defined the problem statement and data understanding approach</li>
+                <li>Performed data cleaning to handle missing values and outliers</li>
+                <li>Built visualizations to communicate trends and risk drivers</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Tommie Clark. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
