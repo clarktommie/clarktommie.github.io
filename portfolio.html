@@ -41,15 +41,15 @@
         </div>
 
         <div class="portfolio-card">
-            <h3>USAA Fraud Detection & Storytelling Dashboard</h3>
-            <p>Multimodal analytics pipeline for regulatory fraud/compliance press releases, built for DTSC 3602 at UNC Charlotte.</p>
+            <h3>USAA Fraud Detection & Semantic Library</h3>
+            <p>Live Streamlit dashboard on Modal that surfaces fraud/compliance signals from Federal Reserve releases and CFPB complaints for DTSC 3602 at UNC Charlotte.</p>
             <ul>
-                <li>Scrapes Federal Reserve/related regulator releases (HTML + PDF) and standardizes metadata</li>
-                <li>Supabase as relational + vector store with SentenceTransformer (all-MiniLM-L6-v2) embeddings</li>
-                <li>Streamlit dashboard with semantic search, focus-term trends, and OpenAI-powered summaries</li>
-                <li>Library of curated semantic collections for quick retrieval and review</li>
+                <li>Scrapes FRB press releases and CFPB complaints; cleans and embeds text for semantic retrieval</li>
+                <li>Supabase as both relational store and vector DB (SentenceTransformer embeddings + cached indexes)</li>
+                <li>Agentic retrieval + OpenAI summaries with focus-term trends, complaint overlays, and loss callouts</li>
+                <li>Semantic library to save/replay topic collections for weekly fraud intelligence briefs</li>
             </ul>
-            <p><a href="https://github.com/clarktommie/usaa_fraud_detection/tree/dev">GitHub Repo</a> | <a href="https://github.com/clarktommie/usaa_fraud_detection/blob/dev/README.md">Live Demo (in README)</a></p>
+            <p><a href="https://clarktommie--usaa-fraud-streamlit-serve.modal.run">Live Demo</a> | <a href="https://github.com/clarktommie/usaa_fraud_detection/tree/dev">GitHub Repo</a></p>
         </div>
     </section>
 </main>
