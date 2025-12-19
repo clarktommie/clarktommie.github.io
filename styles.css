@@ -6,10 +6,15 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 /* Header Section */

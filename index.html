@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional portfolio of Tommie Clark.">
     <title>Tommie Clark - Data Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,29 +27,31 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>As a Data Science student, I am developing expertise in data analysis, machine learning, data mining, and visualization. I thrive on exploring real-world datasets and working on projects that challenge me to grow and make an impact.</p>
-    <p>Although I’m still building hands-on experience, I’m proactively diving into tools, techniques, and projects that will shape my career. My goal is to create a strong foundation in data science and seize opportunities to collaborate and learn from others.</p>
-<div class="portfolio-card">
-    <h3><a href="https://clarktommie--book-browser-run.modal.run/">Book Browser Dashboard</a></h3>
-    <p>
-        End-to-end pipeline for scraping book data, generating AI summaries, storing results in Supabase, and visualizing in a Streamlit dashboard. Deployed on Modal for a serverless live app.
-    </p>
-    <ul>
-        <li>Scrapes + summarizes book data with LLMs</li>
-        <li>Stores data in Supabase (Postgres)</li>
-        <li>Interactive Streamlit dashboard (filters, charts, summaries)</li>
-    </ul>
-    <p>
-        🌐 <a href="https://clarktommie--book-browser-run.modal.run/">Live Demo</a> | 
-        📄 <a href="https://github.com/clarktommie/llmScrapingPractice/blob/main/README.md">README</a>
-    </p>
-</div>
+    <p>I’m a data scientist who enjoys turning raw data into clear answers. I build end-to-end workflows that collect, clean, and analyze information, then share the results through dashboards and concise writeups.</p>
+    <p>Recent work includes deploying interactive apps on Modal and Streamlit, summarizing large text datasets with LLMs, and visualizing health-related risk factors to guide decision-making.</p>
+</section>
 
-
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-card">
+        <h3><a href="https://clarktommie--book-browser-run.modal.run/">Book Browser Dashboard</a></h3>
+        <p>End-to-end pipeline for scraping book data, generating AI summaries, storing results in Supabase, and visualizing in a Streamlit dashboard.</p>
+        <ul>
+            <li>Serverless deployment on Modal with a live Streamlit front-end</li>
+            <li>Supabase/Postgres backend for structured storage and retrieval</li>
+            <li>Interactive filters and charts to explore titles, genres, and summaries</li>
+        </ul>
+        <p><a href="https://clarktommie--book-browser-run.modal.run/">Live Demo</a> | <a href="https://github.com/clarktommie/llmScrapingPractice/blob/main/README.md">Project README</a></p>
+    </div>
 
     <div class="portfolio-card">
-        <h3><a href="https://clarktommie.github.io/clarktommie.github.io-DiabetesRisk/">Defining a Problem and Data Understanding: Diabetes Analysis, Cleaning, and Visualization</a></h3>
-        <p>This project showcases my ability to define data science challenges, clean datasets, and create visualizations focused on diabetes. It explores key risk factors for diabetes, providing valuable insights that contribute to a deeper understanding of the condition and its impact on health.</p>
+        <h3><a href="https://clarktommie.github.io/clarktommie.github.io-DiabetesRisk/">Diabetes Risk Analysis</a></h3>
+        <p>Data cleaning and visualization project exploring key risk factors for diabetes to highlight patterns that matter for health outcomes.</p>
+        <ul>
+            <li>Defined the problem statement and data understanding approach</li>
+            <li>Performed data cleaning to handle missing values and outliers</li>
+            <li>Built visualizations to communicate trends and risk drivers</li>
+        </ul>
     </div>
 </section>
 <section id="skills">
@@ -55,7 +60,7 @@
 
     <div class="skills-container">
         <div class="skill python">Python</div>
-        <div class="skill sql">SQL (Currently Learning)</div>
+        <div class="skill sql">SQL</div>
         <div class="skill pandas">Pandas</div>
         <div class="skill numpy">NumPy</div>
         <div class="skill matplotlib">Matplotlib</div>
@@ -70,7 +75,7 @@
 
 <section id="blog">
     <h2>Blog</h2>
-    <p>I write about data science and technology. Check out my blog:</p>
+    <p>I write about data science and technology. Recent posts and notebooks are on my blog:</p>
     <ul>
         <li><a href="https://clarktommie.github.io/clarktommie.github.io-blog/">Check out my blog</a></li>
     </ul>
@@ -78,7 +83,7 @@
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>I’m eager to grow, collaborate, and learn from others in the data science community. If you’re passionate about tech, data, or learning, let’s connect and share experiences!</p>
+    <p>I’m always up for collaborating on data-driven projects or discussing ideas. If you’re working on something related to analytics, ML, or visualization, let’s connect.</p>
     <ul>
         <li><strong>Email:</strong> <a href="mailto:tommieclark.tlc@gmail.com">tommieclark.tlc@gmail.com</a></li>
         <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tommie-clark-71249982/">Connect with me on LinkedIn</a></li>
@@ -86,7 +91,7 @@
 </section>
 
 <footer>
-    <p>&copy; 2025 Tommie Clark. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Tommie Clark. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
