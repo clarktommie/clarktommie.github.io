@@ -42,12 +42,12 @@
 
         <div class="portfolio-card">
             <h3>USAA Fraud Detection & Semantic Library</h3>
-            <p>Live Streamlit dashboard on Modal that surfaces fraud/compliance signals from Federal Reserve releases and CFPB complaints for DTSC 3602 at UNC Charlotte.</p>
+            <p>Semantic monitoring of FRB press releases and CFPB complaints with embedding search, OpenAI summaries, and a Streamlit dashboard on Modal (DTSC 3602).</p>
             <ul>
-                <li>Scrapes FRB press releases and CFPB complaints; cleans and embeds text for semantic retrieval</li>
-                <li>Supabase as both relational store and vector DB (SentenceTransformer embeddings + cached indexes)</li>
-                <li>Agentic retrieval + OpenAI summaries with focus-term trends, complaint overlays, and loss callouts</li>
-                <li>Semantic library to save/replay topic collections for weekly fraud intelligence briefs</li>
+                <li>End-to-end ETL: scrape HTML/PDF releases and complaints, clean/standardize text, embed with SentenceTransformer, store in Supabase</li>
+                <li>RAG workflow: focus-term detection, semantic search, and OpenAI-driven summaries of relevant enforcement actions</li>
+                <li>Complaint overlays: visualize CFPB complaint clusters and temporal signals alongside regulatory context</li>
+                <li>Semantic library: save/retrieve curated topic collections for analyst briefings</li>
             </ul>
             <p><a href="https://clarktommie--usaa-fraud-streamlit-serve.modal.run">Live Demo</a> | <a href="https://github.com/clarktommie/usaa_fraud_detection/tree/dev">GitHub Repo</a></p>
         </div>
