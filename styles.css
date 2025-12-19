@@ -134,6 +134,18 @@ section h2 {
 
 /* Skills Section */
 
+.skills-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skills-group h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #222;
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
