@@ -77,6 +77,22 @@ section h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+.resume-viewer-wrap {
+    padding: 18px;
+}
+
+.resume-download {
+    margin-bottom: 12px;
+}
+
+.resume-viewer {
+    width: 100%;
+    height: min(75vh, 1000px);
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
 .resume-card h3 {
     margin-bottom: 4px;
     font-size: 1.6rem;
