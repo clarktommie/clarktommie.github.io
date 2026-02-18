@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What I learned building a fraud detection storytelling system">
+    <title>USAA Fraud Detection System - Tommie Clark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Tommie Clark</h1>
+    <p>Data Science Portfolio</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="skills.html">Skills</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+    <section id="blog-post-1">
+        <h2>What I Learned Building the USAA Fraud Detection System</h2>
+        <p class="blog-meta">Published February 2026</p>
+        <div class="blog-content">
+            <p>The strongest decision in this project was treating data preparation as the core deliverable, not a setup task. The model only became useful after I standardized text from several sources and removed formatting noise that broke semantic search quality.</p>
+            <p>I also learned that retrieval quality drives trust more than summary quality. Users quickly lose confidence when search returns loosely related records. Adding focus terms before embedding search improved precision and made review sessions faster for non-technical users.</p>
+            <p>For future iterations, I would measure retrieval performance more rigorously with a labeled benchmark set and tune chunking rules by document type. That should reduce false positives and make weekly risk scans more reliable.</p>
+            <p><a href="blog.html">Back to Blog</a></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Tommie Clark. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

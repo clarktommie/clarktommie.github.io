@@ -148,6 +148,33 @@ section h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.blog-list {
+    display: grid;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.blog-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 18px 20px;
+    background: #fafafa;
+}
+
+.blog-card h3 {
+    margin: 6px 0 8px;
+    font-size: 1.3rem;
+}
+
+.blog-meta {
+    color: #555;
+    font-size: 0.92rem;
+}
+
+.blog-content p {
+    margin-bottom: 14px;
+}
+
 /* Skills Section */
 
 .skills-groups {
