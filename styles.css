@@ -204,63 +204,59 @@ section h2 {
 /* Skills Section */
 
 .skills-groups {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    display: grid;
+    gap: 20px;
 }
 
+.skills-group {
+    --skill-accent: #3b82f6;
+    background: #fbfcff;
+    border: 1px solid #e6e9f2;
+    border-radius: 12px;
+    padding: 16px 16px 18px;
+}
+
+.skills-group:nth-of-type(2) { --skill-accent: #0f766e; }
+.skills-group:nth-of-type(3) { --skill-accent: #475569; }
+.skills-group:nth-of-type(4) { --skill-accent: #2563eb; }
+
 .skills-group h3 {
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-    color: #222;
+    margin-bottom: 12px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #0f172a;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 10px;
 }
 
-.skill {
-    padding: 14px 16px;
-    min-height: 90px;
+.skills-container .skill {
+    padding: 14px 14px 14px 16px;
+    min-height: 78px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #111827;
+    border-radius: 9px;
+    border: 1px solid #dfe3ec;
+    border-left: 3px solid var(--skill-accent);
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.skill:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+.skills-container .skill:hover {
+    transform: translateY(-1px);
+    border-color: #cfd7e8;
+    box-shadow: 0 5px 14px rgba(15, 23, 42, 0.09);
 }
-
-.python { background-color: #306998; }      /* Python blue */
-.sql { background-color: #F29111; }         /* SQL orange */
-.pandas { background-color: #150458; }      /* Pandas deep blue */
-.numpy { background-color: #3A6D8C; }       /* NumPy teal */
-.matplotlib { background-color: #E1452B; }  /* Matplotlib red */
-.seaborn { background-color: #2A7F62; }     /* Seaborn green */
-.ml { background-color: #FF9A8B; }          /* ML pink gradient tone */
-.git { background-color: #F1502F; }         /* GitHub orange */
-.streamlit { background-color: #FF4B4B; }   /* Streamlit red */
-.supabase { background-color: #3ECF8E; }    /* Supabase green */
-.modal { background-color: #121212; }       /* Modal dark gray */
-.excel { background-color: #1D6F42; }       /* Excel green */
-.eda { background-color: #2E6F95; }
-.stats { background-color: #6A4C93; }
-.kpi { background-color: #0F766E; }
-.rca { background-color: #8D6E63; }
-.tpm { background-color: #444B6E; }
-.lean { background-color: #B76E79; }
-.process { background-color: #546E7A; }
-.sop { background-color: #7E57C2; }
 
 /* Footer Section */
 footer {
