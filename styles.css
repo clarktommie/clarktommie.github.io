@@ -244,14 +244,14 @@ section h2 {
     line-height: 1.35;
     color: #1f2937;
     border-radius: 8px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid transparent;
     background: #f1f5f9;
     box-shadow: none;
     transition: background-color 0.16s ease, border-color 0.16s ease;
 }
 
 .skills-container .skill:hover {
-    border-color: #d9dee6;
+    border-color: transparent;
     background: #e8eef5;
 }
 
