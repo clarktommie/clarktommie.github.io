@@ -211,8 +211,9 @@ section h2 {
 .skills-group {
     background: #ffffff;
     border: 1px solid #e5e7eb;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 18px 18px 16px;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.05);
 }
 
 .skills-group h3 {
@@ -242,17 +243,17 @@ section h2 {
     font-weight: 500;
     line-height: 1.35;
     color: #1f2937;
-    border-radius: 6px;
-    border: 1px solid #e6e8ec;
-    background: #fafafa;
-    box-shadow: none;
-    transition: background-color 0.15s ease, border-color 0.15s ease;
+    border-radius: 8px;
+    border: 1px solid #e7e9ee;
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(15, 23, 42, 0.05);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
 }
 
 .skills-container .skill:hover {
-    transform: none;
-    border-color: #d1d5db;
-    background: #f3f4f6;
+    transform: translateY(-2px);
+    border-color: #d5d9e1;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
 }
 
 /* Footer Section */
