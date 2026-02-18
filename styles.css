@@ -69,6 +69,32 @@ section h2 {
     color: #333;
 }
 
+.core-focus-title {
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #1f2937;
+    background: #e9eefc;
+    border-left: 4px solid #4a6cf7;
+    border-radius: 4px;
+}
+
+.core-focus-list {
+    margin-left: 0;
+    padding: 14px 18px 14px 30px;
+    border: 1px solid #dbe3ff;
+    border-radius: 10px;
+    background: #f7f9ff;
+}
+
+.core-focus-list li + li {
+    margin-top: 8px;
+}
+
 .resume-card {
     background: #fff;
     border: 1px solid #e0e0e0;
