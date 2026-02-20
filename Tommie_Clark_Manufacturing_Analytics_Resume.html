@@ -5,46 +5,102 @@
 <meta charset="UTF-8">
 <title>Tommie Clark - Resume</title>
 <style>
+    :root {
+        --bg: #eef2f6;
+        --paper: #ffffff;
+        --ink: #0f172a;
+        --muted: #475569;
+        --line: #dbe3ec;
+        --accent: #1d4ed8;
+    }
+
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 40px;
-        color: #111;
-        line-height: 1.5;
+        margin: 0;
+        padding: 28px 16px;
+        background: radial-gradient(circle at 0% 0%, #f8fafc 0%, var(--bg) 55%);
+        color: var(--ink);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.45;
     }
+
+    .resume-page {
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+        padding: 34px 40px;
+    }
+
     h1 {
-        margin-bottom: 5px;
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0.02em;
     }
+
     h2 {
-        margin-top: 30px;
-        border-bottom: 2px solid #000;
-        padding-bottom: 5px;
-        font-size: 16px;
-        letter-spacing: 0.5px;
+        margin: 24px 0 10px;
+        padding: 0 0 7px;
+        border-bottom: 2px solid var(--line);
+        font-size: 0.9rem;
+        letter-spacing: 0.11em;
+        color: var(--accent);
     }
+
     .contact {
-        margin-bottom: 20px;
-        font-size: 14px;
+        margin-top: 7px;
+        margin-bottom: 14px;
+        color: var(--muted);
+        font-size: 0.95rem;
     }
+
     .section {
-        margin-top: 15px;
+        margin-top: 13px;
     }
+
     .job-title {
         font-weight: bold;
+        display: inline-block;
+        color: #111827;
     }
+
     .date {
         float: right;
-        font-style: italic;
+        color: #334155;
+        font-size: 0.9rem;
+        font-weight: 600;
     }
+
+    p {
+        margin: 0 0 8px;
+    }
+
     ul {
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin: 6px 0 12px 20px;
     }
+
     li {
-        margin-bottom: 6px;
+        margin-bottom: 5px;
+        color: #1f2937;
+    }
+
+    @media (max-width: 760px) {
+        .resume-page {
+            padding: 22px 18px;
+            border-radius: 10px;
+        }
+
+        .date {
+            float: none;
+            display: block;
+            margin-top: 2px;
+        }
     }
 </style>
 </head>
 <body>
+<div class="resume-page">
 
 <h1>Tommie Clark</h1>
 <div class="contact">
@@ -133,5 +189,6 @@ Focused on translating analytical outputs into structured decision support for p
 University of North Carolina at Charlotte<br>
 Expected May 2026</p>
 
+</div>
 </body>
 </html>
